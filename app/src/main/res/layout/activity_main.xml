@@ -1,54 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="24dp">
 
-    <!-- Mostrar el resultado del QR -->
-    <TextView
-        android:id="@+id/resultText"
+    <Button
+        android:id="@+id/btnIrEscaner"
+        android:layout_width="match_parent"
+        android:backgroundTint="#2d4b5e"
+        android:layout_height="wrap_content"
+        android:text="Escanear Entrada/Salida" />
+
+    <Button
+        android:id="@+id/btnVerAsistencias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resultado del QR aparecerá aquí"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Botón para iniciar escaneo -->
-    <Button
-        android:id="@+id/scanButton"
         android:backgroundTint="#2d4b5e"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escanear QR"
-        android:layout_marginBottom="8dp"/>
+        android:text="Ver Asistencias"
+        android:layout_marginTop="16dp"/>
+
     <Button
         android:id="@+id/btnIrCrud"
-        android:backgroundTint="#2d4b5e"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ir a CRUD de empleados" />
-    <!-- Preview de CameraX (oculto hasta que escanees) -->
-    <androidx.camera.view.PreviewView
-        android:id="@+id/previewView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:visibility="gone"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Botón para cerrar la cámara -->
-    <ImageButton
-        android:id="@+id/closeCameraButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@android:drawable/ic_menu_close_clear_cancel"
-        android:background="@android:color/transparent"
-        android:visibility="gone"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="Cerrar cámara"
-        android:layout_marginBottom="16dp"/>
-
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2d4b5e"
+        android:text="Ir al CRUD"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>

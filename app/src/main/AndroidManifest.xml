@@ -28,6 +28,10 @@
             android:exported="true"/>
         <activity android:name=".EditarEmpleadoActivity"
             android:exported="true"/>
+        <activity android:name=".AsistenciasActivity"
+            android:exported="true"/>
+        <activity android:name=".ScannerActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

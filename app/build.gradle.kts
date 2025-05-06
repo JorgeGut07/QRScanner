@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
     implementation("com.google.guava:guava:32.1.2-jre")
     implementation ("com.google.mlkit:barcode-scanning:17.2.0")
     implementation ("androidx.camera:camera-core:1.3.0")
